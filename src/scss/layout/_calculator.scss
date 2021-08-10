@@ -1,51 +1,56 @@
 @use '../utilities' as *;
 
 #root {
-    width: 100%;
-    min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .main {
-    background: navy;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: calc(290px + 10vw);
-    height: calc(330px + 5vh);
-    margin: auto;
+  background: navy;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: calc(290px + 10vw);
+  height: calc(330px + 5vh);
+  margin: auto;
 
-    .display {
-        background: #858693;
-        height: 60px;
-        padding: 1rem;
-        text-align: right;
-        .text {
-            @include muli-text(18px, 700, 32px);
-            color: #fff;
-        }
+  .display {
+    background: #858693;
+    height: 60px;
+    padding: 1rem;
+    text-align: right;
+
+    .text {
+      @include muli-text(18px, 700, 32px);
+
+      color: #fff;
+    }
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+
+    @include flex(row, center, center);
+
+    flex-wrap: wrap;
+
+    button {
+      @include muli-text(14px, 500, 32px);
+
+      flex-basis: 25%;
+      height: calc(60px + 1.25vh);
     }
 
-    .container {
-        width: 100%;
-        height: auto;
-        @include flex(row, center, center);
-        flex-wrap: wrap;
-
-        button {
-            @include muli-text(14px, 500, 32px);
-            flex-basis: 25%;
-            height: calc(60px + 1.25vh);
-        }
-
-        .white_0 {
-            flex-basis: 50%;
-            height: calc(60px + 1.25vh);
-        }
-
-        .orange {
-            background: #EC8F3E;
-        }
+    .white_0 {
+      flex-basis: 50%;
+      height: calc(60px + 1.25vh);
     }
+
+    .orange {
+      background: #ec8f3e;
+    }
+  }
 }
