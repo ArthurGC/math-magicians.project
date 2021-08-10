@@ -16,6 +16,10 @@ class ButtonsTable extends React.Component {
         rows.push(
           <Button color="orange" data={signs[i - 1]} key={i - 1} />,
         );
+      } else if (i === 17) {
+        rows.push(
+          <Button color="white_0" data={signs[i - 1]} key={i - 1} />,
+        );
       } else {
         rows.push(
           <Button data={signs[i - 1]} key={i - 1} />,
