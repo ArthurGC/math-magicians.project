@@ -4,7 +4,6 @@ import Button from './Button';
 class ButtonsTable extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
   }
 
   render() {
