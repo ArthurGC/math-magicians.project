@@ -8,7 +8,9 @@ class Display extends React.Component {
 
   render() {
     return (
-      <div className="display">0</div>
+      <div className="display">
+        <p className="text">0</p>
+      </div>
     );
   }
 }
