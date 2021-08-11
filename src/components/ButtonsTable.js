@@ -8,7 +8,7 @@ class ButtonsTable extends React.Component {
   }
 
   render() {
-    const signs = ['AC', '+/-', '%', '/', 7, 8, 9, 'x', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.', '='];
+    const signs = ['AC', '+/-', '%', '÷', 7, 8, 9, 'x', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.', '='];
     const rows = [];
 
     for (let i = 1; i <= signs.length; i += 1) {
