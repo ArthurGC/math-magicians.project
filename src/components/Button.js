@@ -10,7 +10,7 @@ class Button extends React.Component {
   render() {
     const { color, data } = this.props;
     return (
-      <button type="button" className={color}>{data}</button>
+      <button type="button" className={color} data-name={data}>{data}</button>
     );
   }
 }

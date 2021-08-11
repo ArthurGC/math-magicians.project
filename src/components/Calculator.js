@@ -1,6 +1,5 @@
 import React from 'react';
-import Display from './Display';
-import ButtonsTable from './ButtonsTable';
+import MainContainer from './MainContainer';
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -10,9 +9,8 @@ class Calculator extends React.Component {
 
   render() {
     return (
-      <div className="main">
-        <Display />
-        <ButtonsTable />
+      <div className="calculator-container">
+        <MainContainer />
       </div>
     );
   }
