@@ -15,7 +15,7 @@ class Display extends React.Component {
   }
 }
 Display.defaultProps = {
-  input: '',
+  input: '0',
 };
 
 Display.propTypes = {
