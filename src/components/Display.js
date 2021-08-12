@@ -1,28 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class Display extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Display = ({ input, next, operation }) => (
+  <div className="input" id="display">
+    {input}
+    {' '}
+    {operation}
+    {' '}
+    {next}
+    {' '}
+  </div>
+);
 
-  render() {
-    const { input, next, operation } = this.props;
-    let number = '0';
-    if (operation && next === null) {
-      number = operation;
-    } else {
-      if (input) {
-        number = input;
-      }
-      if (next) {
-        number = next;
-      }
-    }
-    return <div className="input" id="display">{number}</div>;
-  }
-}
 Display.defaultProps = {
   input: '',
   next: '',
