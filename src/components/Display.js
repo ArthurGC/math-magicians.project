@@ -8,18 +8,31 @@ class Display extends React.Component {
   }
 
   render() {
-    const { input } = this.props;
-    return (
-      <div className="input">{input}</div>
-    );
+    const { input, next, operation } = this.props;
+    let number = '0';
+    if (operation && next === null) {
+      number = operation;
+    } else {
+      if (input) {
+        number = input;
+      }
+      if (next) {
+        number = next;
+      }
+    }
+    return <div className="input" id="display">{number}</div>;
   }
 }
 Display.defaultProps = {
-  input: '0',
+  input: '',
+  next: '',
+  operation: '',
 };
 
 Display.propTypes = {
   input: PropTypes.string,
+  next: PropTypes.string,
+  operation: PropTypes.string,
 };
 
 export default Display;
