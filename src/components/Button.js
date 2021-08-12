@@ -10,14 +10,14 @@ class Button extends React.Component {
   render() {
     const { color, data } = this.props;
     return (
-      <button type="button" className={color}>{data}</button>
+      <button type="button" className={color} data-name={data}>{data}</button>
     );
   }
 }
 
 Button.defaultProps = {
   color: 'white',
-  data: '',
+  data: '0',
 };
 
 Button.propTypes = {
