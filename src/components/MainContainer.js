@@ -1,20 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
-import Display from './Display';
 
 class MainContainer extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      input: '',
-    };
+    this.state = {};
   }
 
   render() {
-    const { input } = this.state;
+    const { event, keyDown } = this.props;
     return (
-      <div className="container">
-        <Display input={input} />
+      <div role="button" className="container" onClick={event} onKeyDown={keyDown} tabIndex={0}>
         <div className="row">
           <Button data="AC" />
           <Button data="+/-" />
@@ -48,5 +45,15 @@ class MainContainer extends React.Component {
     );
   }
 }
+
+MainContainer.propTypes = {
+  event: PropTypes.func,
+  keyDown: PropTypes.func,
+};
+
+MainContainer.defaultProps = {
+  event: () => -1,
+  keyDown: () => -1,
+};
 
 export default MainContainer;
