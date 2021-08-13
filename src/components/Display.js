@@ -9,16 +9,17 @@ const Display = ({ input, next, operation }) => {
     error = null;
   }
   return (
-    <div className="input" id="display">
-      {error}
-      {'     '}
-      {input}
-      {' '}
-      {operation}
-      {' '}
-      {next}
-      {' '}
-    </div>
+    <>
+      <div className="input" id="display">
+        {input}
+        {' '}
+        {operation}
+        {' '}
+        {next}
+        {' '}
+      </div>
+      <div className="error">{error}</div>
+    </>
   );
 };
 
