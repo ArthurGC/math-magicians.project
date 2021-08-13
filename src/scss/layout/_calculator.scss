@@ -13,11 +13,26 @@
 
   .input {
     background: #858693;
-    height: 80px;
+    height: 60px;
     padding: 1rem;
     text-align: right;
 
     @include muli-text(18px, 700, 32px);
+
+    color: #fff;
+
+    @include flex(row, center, flex-end);
+
+    width: 100%;
+  }
+
+  .error {
+    background: #858693;
+    height: 15px;
+    padding: 1rem;
+    text-align: left;
+
+    @include muli-text(14px, 700, 32px);
 
     color: #fff;
 
