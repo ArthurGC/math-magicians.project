@@ -32,6 +32,9 @@ export default function calculate(obj, buttonName) {
     }
     // If there is an operation, update next
     if (obj.operation) {
+      if (obj.next === '0') {
+        return { next: buttonName };
+      }
       if (obj.next) {
         return { next: obj.next + buttonName };
       }
@@ -112,7 +115,15 @@ export default function calculate(obj, buttonName) {
   if (!obj.next) {
     return { operation: buttonName };
   }
-
+  if (buttonName === '+' || buttonName === '-' || buttonName === 'x' || buttonName === '÷' || buttonName === '%') {
+    if (obj.operation === '÷' && obj.next === '0') {
+      return {
+        total: obj.total,
+        next: obj.next,
+        operation: '÷',
+      };
+    }
+  }
   // User pressed an operation button and there is an existing operation
   if (obj.operation) {
     return {
