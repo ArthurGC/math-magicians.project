@@ -70,6 +70,13 @@ export default function calculate(obj, buttonName) {
   }
 
   if (buttonName === '=') {
+    if (obj.operation === '÷' && obj.next === '0') {
+      return {
+        total: obj.total,
+        next: obj.next,
+        operation: '÷',
+      };
+    }
     if (obj.next && obj.operation) {
       return {
         total: operate(obj.total, obj.next, obj.operation),
