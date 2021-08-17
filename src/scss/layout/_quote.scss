@@ -4,24 +4,27 @@
   padding: calc(1rem + 0.8vw) calc(1.5rem + 10vw);
   padding-top: calc(8rem - 1vh);
   min-height: 100vh;
+
   @include flex(row, center,center);
 
   .card {
-
     border: 1px solid #eee;
-    box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.2);
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
     padding: calc(1.5rem + 1vw);
     border-radius: 8px;
+
     .quote__text {
       @include muli-text(18px, 500, 28px);
+
       margin-bottom: calc(1rem + 2vh);
       color: #222831;
     }
 
     .quote__author {
       @include muli-text(18px, 600, 28px, 0.7);
+
       margin-top: calc(1rem + 2vh);
-      color: #393E46;
+      color: #393e46;
     }
   }
 }

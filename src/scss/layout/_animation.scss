@@ -1,107 +1,112 @@
 .navbar {
-    .link:hover .hand {
-        animation: move-side 1s infinite;
-        animation-timing-function: linear;
-    }
-    
-    @keyframes move-side {
-        0% {
-            transform: translateX(0px);
-        }
+  .link:hover .hand {
+    animation: move-side 1s infinite;
+    animation-timing-function: linear;
+  }
 
-        50% {
-            transform: translateX(3px);
-        }
-    
-        100% {
-            transform: translateX(0px);
-        }
+  @keyframes move-side {
+    0% {
+      transform: translateX(0);
     }
+
+    50% {
+      transform: translateX(3px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
 }
 
 .home__container {
-    .right {
-        .second {
+  .right {
+    .second {
+      #Eye_1 {
+        animation: rotation-reverse 2s infinite;
+        animation-timing-function: linear;
+        transform-origin: center;
+        transform-box: fill-box;
+      }
 
-            #Eye_1 {
-                animation: rotation-reverse 2s infinite;
-                animation-timing-function: linear;
-                transform-origin: center;
-                transform-box: fill-box;
-            }
-            #Eye_2 {
-                animation: rotation 2s infinite;
-                animation-timing-function: linear;
-                transform-origin: center;
-                transform-box: fill-box;
-            }
-            #Sum {
-                opacity: 1;
-                animation: disappear 6s infinite;
-                animation-timing-function: ease;
-            }
+      #Eye_2 {
+        animation: rotation 2s infinite;
+        animation-timing-function: linear;
+        transform-origin: center;
+        transform-box: fill-box;
+      }
 
-            #Subs {
-                opacity: 0;
-                animation: appear 6s infinite;
-                animation-timing-function: ease;
-            }
+      #Sum {
+        opacity: 1;
+        animation: disappear 6s infinite;
+        animation-timing-function: ease;
+      }
 
-            #Mul {
-                opacity: 1;
-                animation: disappear 6s infinite;
-                animation-timing-function: ease;
-            }
+      #Subs {
+        opacity: 0;
+        animation: appear 6s infinite;
+        animation-timing-function: ease;
+      }
 
-            #Div {
-                opacity: 0;
-                animation: appear 6s infinite;
-                animation-timing-function: ease;
-            }
-        }
+      #Mul {
+        opacity: 1;
+        animation: disappear 6s infinite;
+        animation-timing-function: ease;
+      }
+
+      #Div {
+        opacity: 0;
+        animation: appear 6s infinite;
+        animation-timing-function: ease;
+      }
     }
+  }
 }
 
 @keyframes appear {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 0;
-    }
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes disappear {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 1;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes rotation-reverse {
-    from {
-        transform: rotate(360deg);
-    }
-    to {
-        transform: rotate(0deg);
-    }
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
 }

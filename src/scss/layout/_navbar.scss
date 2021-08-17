@@ -4,7 +4,9 @@
   position: fixed;
   padding: calc(1rem + 0.8vw) calc(1.5rem + 10vw);
   background: #222831;
+
   @include flex(row, center, space-between);
+
   gap: 1rem;
   flex-wrap: wrap;
   width: 100%;
@@ -12,8 +14,9 @@
   .logo {
     @include muli-text(16px, 700, 24px, 0.6);
     @include flex(row, center, center);
+
     gap: 1rem;
-    color: #EEEEEE;
+    color: #eee;
     width: 100%;
 
     @media (min-width: 634px) {
@@ -24,6 +27,7 @@
   ul {
     list-style: none;
     width: 100%;
+
     @include flex(row, center, center);
 
     @media (min-width: 634px) {
@@ -31,31 +35,31 @@
     }
 
     li {
-
       @media (min-width: 634px) {
         margin-top: 0;
       }
 
       @media (min-width: 978px) {
-        margin-right: .8rem;
+        margin-right: 0.8rem;
       }
 
       .link {
         text-decoration: none;
-        color: #EEEEEE;
-        padding: .4rem .5rem;
+        color: #eee;
+        padding: 0.4rem 0.5rem;
         border-radius: 8px;
+
         @include flex(row, center, center);
         @include muli-text(14px, 400, 24px);
 
         @media (min-width: 536px) {
-          padding: .5rem 1rem;
+          padding: 0.5rem 1rem;
         }
 
         .hand {
           display: none;
           margin-right: 8px;
-          color: #EEEEEE;
+          color: #eee;
 
           @media (min-width: 785px) {
             display: block;
@@ -64,7 +68,7 @@
       }
 
       .active-link {
-        background: #00ADB5;
+        background: #00adb5;
       }
     }
   }

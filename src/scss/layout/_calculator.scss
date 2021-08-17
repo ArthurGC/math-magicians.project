@@ -2,14 +2,16 @@
 
 .calculator__container {
   @include flex(column, center, center);
+
   padding: calc(1rem + 0.8vw) calc(1.5rem + 10vw);
   padding-top: calc(8rem - 1vh);
   min-height: 100vh;
 
   .calculator__title {
     @include muli-text(18px, 600, 24px, 0.7);
+
     margin-bottom: calc(1rem + 1vh);
-    color: #00ADB5;
+    color: #00adb5;
   }
 
   .input {
@@ -66,7 +68,7 @@
     }
 
     .orange {
-      background: #393E46;
+      background: #393e46;
       color: #eee;
     }
   }
