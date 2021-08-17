@@ -22,11 +22,13 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      <h1 className="logo">Math Magicians</h1>
       <ul>
         {links.map((link) => (
           <li key={link.id}>
             <NavLink
               to={link.path}
+              className="link"
               activeClassName="active-link"
               exact
             >

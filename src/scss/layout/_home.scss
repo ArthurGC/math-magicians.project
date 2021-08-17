@@ -1,0 +1,18 @@
+@use '../utilities' as *;
+
+.home {
+  &__container {
+    padding: calc(1rem + 0.8vw) calc(1.5rem + 10vw);
+  }
+
+  &__title {
+    @include muli-text(18px, 800, 24px, 0.7);
+  }
+
+  &__first__p,
+  &__second__p {
+    margin: calc(1rem + 0.8vw) 0;
+
+    @include muli-text(14px, 500, 32px);
+  }
+}

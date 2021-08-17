@@ -1,0 +1,11 @@
+@use '../utilities' as *;
+
+.quote {
+  &__container {
+    padding: calc(1rem + 0.8vw) calc(1.5rem + 10vw);
+  }
+
+  &__content {
+    @include muli-text(18px, 800, 24px, 0.7);
+  }
+}

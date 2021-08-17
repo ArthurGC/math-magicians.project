@@ -1,0 +1,39 @@
+@use '../utilities' as *;
+
+.navbar {
+  padding: calc(1rem + 0.8vw) calc(1.5rem + 10vw);
+
+  @include flex(row, center, space-between);
+
+  flex-wrap: wrap;
+
+  .logo {
+    @include muli-text(20px, 800, 24px, 0.7);
+
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style: none;
+
+    @include flex(row, center, center);
+
+    li {
+      margin-right: 1rem;
+      margin-top: 1rem;
+
+      @media (min-width: 536px) {
+        margin-top: 0;
+      }
+
+      .link {
+        text-decoration: none;
+        color: rgb(108, 2, 247);
+      }
+
+      .active-link {
+        color: red;
+      }
+    }
+  }
+}
