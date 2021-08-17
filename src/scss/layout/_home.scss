@@ -3,16 +3,40 @@
 .home {
   &__container {
     padding: calc(1rem + 0.8vw) calc(1.5rem + 10vw);
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+    text-align: center;
+    gap: calc(1rem + 3vw);
+    min-height: 80vh;
+
+    @media (min-width: 1280px) {
+      flex-wrap: nowrap;
+    }
+
+    .right {
+      width: calc(300px + 25vw);
+      // height: calc(100px + 5vh);
+
+      svg {
+        width: auto;
+        height: auto;
+      }
+    }
   }
 
   &__title {
-    @include muli-text(18px, 800, 24px, 0.7);
+    @include muli-text(25px, 600, 32px, 2);
+    line-height: calc(24px + 3vh);
+    margin-top: calc(.5rem + 2vh);
+    color: #3E00FF;
+    @media (min-width: 1280px) {
+      line-height: calc(24px + 5vh);
+    }
   }
 
-  &__first__p,
   &__second__p {
     margin: calc(1rem + 0.8vw) 0;
-
-    @include muli-text(14px, 500, 32px);
+    color: #170055;
+    @include muli-text(18px, 500, 28px, 0.7);
   }
 }

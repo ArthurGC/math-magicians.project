@@ -2,15 +2,16 @@
 
 .navbar {
   padding: calc(1rem + 0.8vw) calc(1.5rem + 10vw);
-
+  background: #170055;
   @include flex(row, center, space-between);
-
+  gap: 1rem;
   flex-wrap: wrap;
 
   .logo {
-    @include muli-text(20px, 800, 24px, 0.7);
-
-    text-transform: uppercase;
+    @include muli-text(16px, 700, 24px, 0.6);
+    @include flex(row, center, space-between);
+    gap: 1rem;
+    color: #B5FFD9;
   }
 
   ul {
@@ -19,20 +20,39 @@
     @include flex(row, center, center);
 
     li {
-      margin-right: 1rem;
-      margin-top: 1rem;
 
-      @media (min-width: 536px) {
+      @media (min-width: 634px) {
         margin-top: 0;
+      }
+
+      @media (min-width: 978px) {
+        margin-right: .8rem;
       }
 
       .link {
         text-decoration: none;
-        color: rgb(108, 2, 247);
+        color: #B5FFD9;
+        padding: .4rem .5rem;
+        border-radius: 8px;
+        @include flex(row, center, center);
+
+        @media (min-width: 536px) {
+          padding: .5rem 1rem;
+        }
+
+        .hand {
+          display: none;
+          margin-right: 8px;
+          color: #B5FFD9;
+
+          @media (min-width: 768px) {
+            display: block;
+          }
+        }
       }
 
       .active-link {
-        color: red;
+        background: #3E00FF;
       }
     }
   }

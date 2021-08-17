@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { FaCalculator, FaRegHandPointRight } from 'react-icons/fa';
 
 const Navbar = () => {
   const links = [
@@ -22,7 +23,10 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <h1 className="logo">Math Magicians</h1>
+      <h1 className="logo">
+        <FaCalculator />
+        Math Magicians
+      </h1>
       <ul>
         {links.map((link) => (
           <li key={link.id}>
@@ -32,6 +36,7 @@ const Navbar = () => {
               activeClassName="active-link"
               exact
             >
+              <FaRegHandPointRight className="hand" />
               {link.text}
             </NavLink>
           </li>
