@@ -1,0 +1,53 @@
+@use '../utilities' as *;
+
+.home {
+  &__container {
+    padding: calc(1rem + 0.8vw) calc(1.5rem + 10vw);
+    padding-top: calc(5.5rem - 1vh);
+
+    @include flex(row, center, center);
+
+    flex-wrap: wrap;
+    text-align: center;
+    gap: calc(1rem + 3vw);
+    min-height: 100vh;
+
+    @media (min-width: 1280px) {
+      flex-wrap: nowrap;
+    }
+
+    .right {
+      width: calc(300px + 25vw);
+
+      svg {
+        width: auto;
+        height: auto;
+      }
+    }
+
+    .left {
+      @media (min-width: 1280px) {
+        text-align: left;
+      }
+    }
+  }
+
+  &__title {
+    @include muli-text(25px, 600, 32px, 2);
+
+    line-height: calc(24px + 3vh);
+    margin-top: calc(0.5rem + 2vh);
+    color: #00adb5;
+
+    @media (min-width: 1280px) {
+      line-height: calc(24px + 5vh);
+    }
+  }
+
+  &__second__p {
+    margin: calc(1rem + 0.8vw) 0;
+    color: #222831;
+
+    @include muli-text(18px, 500, 28px, 0.7);
+  }
+}

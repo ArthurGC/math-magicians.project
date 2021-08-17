@@ -1,5 +1,5 @@
 @mixin muli-text($size, $weight, $height, $increase: 0.3) {
-  font-family: muli, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-size: calc(#{$size} + #{$increase}vw);
   font-weight: $weight;
