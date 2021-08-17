@@ -9,6 +9,7 @@ import './styles.scss';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Quote from './components/Quote';
+import Footer from './components/Footer';
 
 const App = () => (
   <Router>
@@ -24,6 +25,7 @@ const App = () => (
         <Quote />
       </Route>
     </Switch>
+    <Footer />
   </Router>
 );
 

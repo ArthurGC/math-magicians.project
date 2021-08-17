@@ -2,7 +2,6 @@
 
 .quote__container {
   padding: calc(1rem + 0.8vw) calc(1.5rem + 10vw);
-  padding-top: calc(8rem - 1vh);
   min-height: 100vh;
 
   @include flex(row, center,center);

@@ -10,7 +10,7 @@
   .calculator__title {
     @include muli-text(18px, 600, 24px, 0.7);
 
-    margin-bottom: calc(1rem + 1vh);
+    margin-bottom: calc(0.8rem + 1vh);
     color: #00adb5;
   }
 
