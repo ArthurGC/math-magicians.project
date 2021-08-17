@@ -4,6 +4,10 @@
 
 In this project, I set up my Math Magicians project. It is about making a calculator (styles and functionality with REACT). This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## :red_circle: Live Demo
+
+[Live Preview Link](https://arthurgc.github.io/math-magicians.project)
 ## :hammer: Built With
 
 - HTML, SASS and REACT.
