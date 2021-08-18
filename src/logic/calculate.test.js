@@ -26,4 +26,30 @@ describe('Test calculate function', () => {
     let total = obj.total;
     expect(total).toEqual('6.5');
   });
+
+  test('Testing an user interaction division 0', () => {
+    const operations = ['5', '÷', '0', '='];
+    operations.forEach((oper) => {
+      obj = { ...obj, ...calculate(obj, oper) };
+    });
+
+    expect(obj).toEqual({
+      total: '5',
+      next: '0',
+      operation: '÷',
+    });
+  });
+
+  test('Testing an user interaction AC', () => {
+    const userInteraction = ['5', 'x', '7', '+', '10', '÷', '5', '=', 'AC'];
+    userInteraction.forEach((oper) => {
+      obj = { ...obj, ...calculate(obj, oper) };
+    });
+
+    expect(obj).toEqual({
+      total: null,
+      next: null,
+      operation: null,
+    });
+  });
 });
