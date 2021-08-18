@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 
 const MainContainer = ({ event, keyDown }) => (
-  <div role="button" className="container" onClick={event} onKeyDown={keyDown} tabIndex={0}>
+  <div role="button" className="container" onClick={event} onKeyDown={keyDown} tabIndex="0" data-testid='div-container'>
     <div className="row">
       <Button data="AC" />
       <Button data="+/-" />
