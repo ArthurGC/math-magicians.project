@@ -5,16 +5,16 @@ import '@testing-library/jest-dom/extend-expect';
 import Navbar from './Navbar';
 
 describe('Test NavBar component', () => {
-  //Arrange
+  // Arrange
 
-  //Act
+  // Act
   const component = render(
     <Router>
       <Navbar />
-    </Router>
+    </Router>,
   );
 
-  //Assert
+  // Assert
   test('Testing navBar component render', () => {
     component.getByText('Home');
     component.getByText('Calculator');

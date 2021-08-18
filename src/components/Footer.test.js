@@ -4,11 +4,11 @@ import '@testing-library/jest-dom/extend-expect';
 import Footer from './Footer';
 
 describe('Test Footer component', () => {
-  //Arrange
+  // Arrange
 
-  //Act
+  // Act
   const component = render(<Footer />);
-  //Assert
+  // Assert
   test('Testing Footer component render', () => {
     component.getByText('ArthurGC');
   });

@@ -4,12 +4,12 @@ import '@testing-library/jest-dom/extend-expect';
 import Quote from './Quote';
 
 describe('Test Quote component', () => {
-  //Arrange
+  // Arrange
 
-  //Act
+  // Act
   const component = render(<Quote />);
 
-  //Assert
+  // Assert
   test('Testing Quote component render', () => {
     component.getByText('William Paul Thurston');
   });

@@ -4,22 +4,22 @@ import '@testing-library/jest-dom/extend-expect';
 import Display from './Display';
 
 describe('Test Display component', () => {
-  //Arrange
+  // Arrange
   const props = {
     input: '5',
     next: '4',
     operation: 'x',
   };
-  //Act
+  // Act
   const component = render(
     <Display
       input={props.input}
       next={props.next}
       operation={props.operation}
-    />
+    />,
   );
 
-  //Assert
+  // Assert
   test('Testing Display component render', () => {
     component.getByText('5 x 4');
   });

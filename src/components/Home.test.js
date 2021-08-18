@@ -4,12 +4,12 @@ import '@testing-library/jest-dom/extend-expect';
 import Home from './Home';
 
 describe('Test Home component', () => {
-  //Arrange
+  // Arrange
 
-  //Act
+  // Act
   const component = render(<Home />);
 
-  //Assert
+  // Assert
   test('Testing Home component render', () => {
     component.getByText('The best Calculator in the Web');
   });
