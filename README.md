@@ -7,7 +7,9 @@ In this project, I set up my Math Magicians project. It is about making a calcul
 
 ## :red_circle: Live Demo
 
-[Live Preview Link](https://arthurgc.github.io/math-magicians.project)
+- [Live Preview Link GITHUB](https://arthurgc.github.io/math-magicians.project)
+- [Live Preview Link HEROKU](https://math-magician-arthurgc.herokuapp.com/#/)
+- [Live Preview Link NETLIFY](https://math-magicians-calculator.netlify.app/#/)
 ## :hammer: Built With
 
 - HTML, SASS and REACT.
